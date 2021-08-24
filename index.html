@@ -2,33 +2,100 @@
 <html>
     <head>
         <title>Dante's Amazing Website</title>
+        <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+        
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
       
     </head>
     
     <body>
-        <div>
-            <h2>Dante Compton</h2> 
-            <p>Student at Belle Chasse Highschool</p>
+        <div id="all-contents">
+            <h1>Dante Compton</h1> 
+            <h2>Student at Belle Chasse Highschool</h2>
             <nav>
-    
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                      <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                      <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
             </nav>
     
             <main>
                 <!-- Interests section -->
-                <div>
-                    <h3>Call Of Duty Cold War</h3> 
+                <div class="nav-li"">
+                    <h3>I love playing Call Of Duty Cold War</h3> 
+                    <ul>
+                        <li>A multiplayer/zombie game with online matching.</li>
+                        <li>Different modes to select when joining matches</li>
+                        <li>You can make your own weapon loadout</li>
+                    </ul>
                 </div>
                 <!-- Sidebar section -->
-    <div>
-      
-    </div>
-
-    <!-- Content section -->
-    <div>
-      
-    </div>
-    
-            </main>
+                <div class="sidebar">
+                    <img class="sidebar-img" src="https://areajugones.sport.es/wp-content/uploads/2021/08/warzone-season-5-1080x609.jpeg">
+              </div>
         </div>
-      <h1> </h1>     </body>
-</html>
+      
+   
